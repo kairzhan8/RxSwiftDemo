@@ -14,6 +14,8 @@
 		55150C3125E3B90700B72BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55150C2F25E3B90700B72BF3 /* Main.storyboard */; };
 		55150C3325E3B90900B72BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55150C3225E3B90900B72BF3 /* Assets.xcassets */; };
 		55150C3625E3B90900B72BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55150C3425E3B90900B72BF3 /* LaunchScreen.storyboard */; };
+		55AD644D25E4C3FC00034459 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD644C25E4C3FC00034459 /* PhotosCollectionViewController.swift */; };
+		55AD645025E4D2A000034459 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD644F25E4D2A000034459 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		55150C3525E3B90900B72BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55150C3725E3B90900B72BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55150C4125E3B97600B72BF3 /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = RxSwift.playground; path = ../../RxSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		55AD644C25E4C3FC00034459 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		55AD644F25E4D2A000034459 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C65C6B14DC2DA9ABD190761 /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,8 @@
 				55150C3225E3B90900B72BF3 /* Assets.xcassets */,
 				55150C3425E3B90900B72BF3 /* LaunchScreen.storyboard */,
 				55150C3725E3B90900B72BF3 /* Info.plist */,
+				55AD644C25E4C3FC00034459 /* PhotosCollectionViewController.swift */,
+				55AD644F25E4D2A000034459 /* PhotoCollectionViewCell.swift */,
 			);
 			path = RxSwiftDemo;
 			sourceTree = "<group>";
@@ -208,8 +214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55150C2E25E3B90700B72BF3 /* ViewController.swift in Sources */,
+				55AD645025E4D2A000034459 /* PhotoCollectionViewCell.swift in Sources */,
 				55150C2A25E3B90700B72BF3 /* AppDelegate.swift in Sources */,
 				55150C2C25E3B90700B72BF3 /* SceneDelegate.swift in Sources */,
+				55AD644D25E4C3FC00034459 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -341,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
