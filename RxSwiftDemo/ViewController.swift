@@ -22,11 +22,12 @@ class ViewController: UIViewController {
     
     @IBAction func applyFilterButtonPressed() {
         guard let sourceImage = photoImageView.image else { return }
-        FilterService().applyFilter(to: sourceImage) { (filteredImage) in
-            DispatchQueue.main.async {
-                self.photoImageView.image = filteredImage
-            }
-        }
+        FilterService().applyFilter(to: sourceImage)
+            .subscribe(onNext: { filteredImage in
+                DispatchQueue.main.async {
+                    self.photoImageView.image = filteredImage
+                }
+            }).disposed(by: disposeBag)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
